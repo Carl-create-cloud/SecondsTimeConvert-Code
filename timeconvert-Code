@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int seconds;
+    int hours;
+    int minutes;
+    
+    printf("\nPls enter your seconds to get time: ");
+    scanf("%d", &seconds);
+    
+    hours = seconds / 3600; // seconds divided by 3600
+    seconds = seconds % 3600; // getting the remainder1
+    minutes = seconds / 60; // remainder1 / 60
+    seconds = seconds % 60; // remainder1 divided 60 to get remainder2
+    
+    printf("%d hrs: %d mins: %d sec",hours,minutes,seconds);
+    
+    return 0;
+}
